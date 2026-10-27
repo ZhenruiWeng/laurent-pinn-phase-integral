@@ -113,6 +113,26 @@ All benchmarks use 4 random-start multistart for reliability. Position error and
 - **Branch robustness**: Tan benchmark's 3π/2 continuation votes are completely rejected by Tukey biweight, with no residual bias
 - **Position precision**: p32 (α=2) achieves xs_err ~ 10⁻⁶ — second-order poles give extremely sharp phase-integral votes
 
+### Fit Gallery
+
+Black solid = exact solution; red dashed = Laurent PINN prediction. Gray dotted line = true pole; red dashed vertical line = learned pole.
+
+| Blowup (u'=u², α=1) | Tan (u'=u²+1, α=1) |
+|:---:|:---:|
+| ![blowup](figs/blowup_fit_big.png) | ![tan](figs/tan_fit_big.png) |
+| **Cubic (u'=u³, α=1/2)** | **p32 (u'=u^(3/2), α=2)** |
+| ![cubic](figs/cubic_fit_big.png) | ![p32](figs/p32_fit_big.png) |
+| **u2_2u (u'=u²+2u, α=1)** | **Control — virtual pole at x=−1** |
+| ![u2_2u](figs/u2_2u_fit_big.png) | ![control](figs/control_fit_big.png) |
+
+### Multi-Start Convergence (4 random starts)
+
+The discovery phase reliably finds the singularity from every initial estimate — no basin-of-attraction issues thanks to the convex phase-integral functional.
+
+| Tan multistart | Control multistart (virtual pole) |
+|:---:|:---:|
+| ![tan_ms](figs/tan_v3b.png) | ![control_ms](figs/control_v3b_fixed.png) |
+
 ---
 
 ## 🚀 Quick Start
