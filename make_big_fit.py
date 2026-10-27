@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Zhenrui Weng. Licensed under the MIT License.
 """Generate big, clean single-panel fit plots for all benchmarks."""
 import numpy as np
 import math

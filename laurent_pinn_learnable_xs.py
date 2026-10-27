@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Zhenrui Weng. Licensed under the MIT License.
 """
 Laurent-Enriched PINN with a LEARNABLE Singularity Position
 ===========================================================

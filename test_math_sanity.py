@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Zhenrui Weng. Licensed under the MIT License.
 """Fast math sanity checks for the generalized Laurent pole + phase integral.
 
 Run: python test_math_sanity.py
